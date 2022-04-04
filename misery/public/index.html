@@ -15,7 +15,27 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
 </head>
 <body>
-  <h1>Hello Word Test 1 2 3 4 5</h1>
+  <p id="name">Misery-Toe-Tac-tic</p>
+  <p id="status" class="status"></p>
+  
+  <table id="grid3" class="animated zoomIn">
+    <tr>
+        <td data-cell-index="0" id="cell" class="bottom right"></td>
+        <td data-cell-index="1" id="cell" class="bottom right"></td>
+        <td data-cell-index="2" id="cell" class="bottom"></td>
+    </tr>
+    <tr>
+        <td data-cell-index="3" id="cell" class="bottom right" ></td>
+        <td data-cell-index="4" id="cell" class="bottom right" ></td>
+        <td data-cell-index="5" id="cell" class="bottom"></td>
+    </tr>
+    <tr>
+        <td data-cell-index="6" id="cell" class="right"></td>
+        <td data-cell-index="7" id="cell" class="right"></td>
+        <td data-cell-index="8" id="cell"></td>
+    </tr>
+</table>
+<button id="restart">RESTART</button>
 
   <script>
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -38,4 +58,71 @@
     enable2();
   </script>
 </body>
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #9c667a;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+#name{
+  margin: 1%;
+  font-family: "Permanent Marker", cursive;
+  font-size: 50pt;
+  color: #713c43;
+}
+#status{
+  margin-top: 1%;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25pt;
+}
+table {
+  font-family: "Permanent Marker", cursive;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 2%;
+  cursor: pointer;
+  clear: both;
+  
+}
+#cell{
+  font-size: 60pt;
+}
+
+td {
+  width: 150px;
+  height: 150px;
+  font-size: 120px;
+}
+
+.bottom {
+  border-bottom: 6px solid #49074C;
+}
+
+.right {
+  border-right: 6px solid #49074C;
+}
+#restart {
+  background-color: #49074C;
+  border: none;
+  color: #FFEEDB;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  position: relative;
+  top: 7vh;
+}
+
+#restart:hover {
+  background-color: #FFEEDB;
+  color: #49074C;
+}
+
+</style>
 </html>
